@@ -9,6 +9,35 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="37,8,0,0" Text="Glazer App" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="btnCalc" Content="Button" HorizontalAlignment="Left" Margin="193,722,0,0" VerticalAlignment="Top" Height="53" Width="302" Click="BtnCalc_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="77,67,0,0" Text="Height:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,133,0,0" Text="Width:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.457,0.522"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="169,67,0,0" Text="" VerticalAlignment="Top" Width="352"/>
+        <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Margin="169,127,0,0" Text="" VerticalAlignment="Top" Width="352"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,192,0,0" Text="Tint Color:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <ComboBox x:Name="comTint" HorizontalAlignment="Left" Margin="169,192,0,0" VerticalAlignment="Top" Width="352" SelectionChanged="ComTint_SelectionChanged">
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="Brown"/>
+            <ComboBoxItem Content="Blue"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="71,254,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <Slider x:Name="sldQuantity" HorizontalAlignment="Left" Margin="169,248,0,0" VerticalAlignment="Top" Width="352" Maximum="100" Foreground="#FF00D70A" ValueChanged="SldQuantity_ValueChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,285,0,0" Text="Output:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,342,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="83,394,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="heightOutput" HorizontalAlignment="Left" Margin="168,342,0,0" Text="" VerticalAlignment="Top" Width="352"/>
+        <TextBox x:Name="widthOutput" HorizontalAlignment="Left" Margin="169,392,0,0" Text="" VerticalAlignment="Top" Width="352"/>
+        <TextBox x:Name="tintOutput" HorizontalAlignment="Left" Margin="169,451,0,0" Text="" VerticalAlignment="Top" Width="352"/>
+        <TextBlock HorizontalAlignment="Left" Margin="91,451,0,0" Text="Tint" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="quantityOutput" HorizontalAlignment="Left" Margin="168,509,0,0" Text="" VerticalAlignment="Top" Width="353"/>
+        <TextBox x:Name="lengthOutput" HorizontalAlignment="Left" Margin="168,562,0,0" Text="" VerticalAlignment="Top" Width="352"/>
+        <TextBox x:Name="areaOutput" HorizontalAlignment="Left" Margin="169,614,0,0" Text="" VerticalAlignment="Top" Width="353"/>
+        <TextBlock HorizontalAlignment="Left" Margin="72,511,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="dateOutput" HorizontalAlignment="Left" Margin="169,668,0,0" Text="" VerticalAlignment="Top" Width="353"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,564,0,0" Text="Frame Length" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,614,0,0" Text="Area" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,671,0,0" Text="Date Ordered" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
 
     </Grid>
 </Page>
